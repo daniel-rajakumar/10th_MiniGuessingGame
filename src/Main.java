@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Main2 {
+public class Main {
 
     //only for testing purposes! 
     boolean developerOption = false;//shows the database, after the guess !!!Warning for printing large data set!!!
@@ -25,7 +25,7 @@ public class Main2 {
 
     final Scanner enter = new Scanner(System.in);
 
-    Main2(){
+    Main(){
         if(loadingProcess) load();
         run();
     }
@@ -238,20 +238,10 @@ public class Main2 {
             try{Thread.sleep(writeSpeed);} catch (InterruptedException e){}
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
 
     public static void main(String[] args) {
-        new Main2();
+        new Main();
     }
 }
